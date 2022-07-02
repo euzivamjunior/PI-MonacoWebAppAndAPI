@@ -1,0 +1,31 @@
+.botao__formulario{
+    
+    background: white;
+    border-radius: 15px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    height: 70px;
+    width: 400px;
+}
+
+.botao__formulario:hover{
+    background: black;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) and (max-width: 767.98px) { 
+    .botao__formulario{
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        width: 200px;
+    }
+}
+
+
+

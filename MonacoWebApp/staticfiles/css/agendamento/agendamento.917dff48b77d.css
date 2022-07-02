@@ -1,0 +1,18 @@
+.agendamento{
+    border: 2px solid black;
+    background: #FFF999;;
+}
+
+.confirmar__agendamento{
+    background-image: url("../../imagens/imagens-Compactadas/check.fe5701fe316d.jpg");
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.excluir__agendamento{
+    background: url("../../imagens/imagens-Compactadas/delete.49b00a80b3e5.jpg");
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}

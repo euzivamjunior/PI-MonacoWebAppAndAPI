@@ -1,0 +1,14 @@
+.formulario__label{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) and (max-width: 767.98px) { 
+    .formulario__label{
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+}

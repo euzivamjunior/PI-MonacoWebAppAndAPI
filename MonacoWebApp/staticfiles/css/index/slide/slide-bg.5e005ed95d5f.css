@@ -1,0 +1,36 @@
+.slide1{
+    background: url("../../../imagens/imagens-Compactadas/slide1.8264ed173c5b.jpg") no-repeat;
+    height: 543px; 
+}
+
+.slide2{
+    background: url("../../../imagens/imagens-Compactadas/slide2.6b8d61e79595.jpeg") no-repeat;
+    height: 543px;  
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) and (max-width: 467.98px) { 
+    .slide1{
+        background: url("../../../imagens/imagens-Compactadas/slide1_celular.9f0438b5d548.jpeg") no-repeat;
+        height: 543px; 
+    }
+    .slide2{
+        background: url("../../../imagens/imagens-Compactadas/slide2_celular.fcbdb543afe5.jpeg") no-repeat;
+        height: 543px;  
+    }
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 468px) and (max-width: 991.98px) { 
+    .slide1{
+        background: url("../../../imagens/imagens-Compactadas/slide1_tablet.4f42e7604164.jpg") no-repeat;
+        height: 543px; 
+    }
+    .slide2{
+        background: url("../../../imagens/imagens-Compactadas/slide2_tablet.9ef0469d42f5.jpg")  no-repeat;
+        height: 543px;  
+    }
+    
+}
