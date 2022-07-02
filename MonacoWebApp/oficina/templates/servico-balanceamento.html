@@ -1,0 +1,23 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Balanceamento</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">O balanceamento de roda evita vibrações e preserva a vida útil do pneu por meio do equilíbrio do conjunto pneu/roda. Para isso, a roda recebe contrapesos (chumbos), na medida e no local certo para que seu rodar seja suave e equilibrado.
+                    </p>
+                    <p class="servico__conteudo">Não fazer o balanceamento, além de provocar trepidações no veículo, pode levar a um desgaste prematuro dos pneus.
+                    </p>
+                    <p class="servico__conteudo">Quando fazer?</p>
+                    <p class="servico__conteudo">Sempre que o pneu for trocado ele deve ser balanceado. Você também pode precisar de balanceamento se seu carro estiver trepidando, se você teve um pneu furado e consertado e, de forma preventiva, a cada 10.000km.</p>
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/balanceamet.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço de balanceamento">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

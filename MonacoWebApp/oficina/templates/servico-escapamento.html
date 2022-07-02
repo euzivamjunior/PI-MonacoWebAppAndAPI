@@ -1,0 +1,21 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Escapamento e catalisador</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">Escapamento é um condutor que possibilita ao automóvel encaminhar os gases do resultado da combustão para fora do ambiente do motor, além de influenciar no desenvolvimento do motor.</p>
+                    <p class="servico__conteudo">Nele existe um ou mais catalisadores com a função de converter componentes nocivos dos gases de escapamento em componentes inofensivos, mas poucas pessoas sabem como isso acontece. Entendendo melhor como este componente opera e atua conjuntamente com o motor, acreditamos que você passará a dar mais importância quando precisar realizar algum tipo de manutenção nele.</p>
+                    <p class="servico__conteudo">O catalisador é desenvolvido para trabalhar em sintonia com o sistema de alimentação de combustível dos automóveis. Em bom funcionamento, ele é capaz de converter cerca de 98% dos gases poluentes e nocivos.</p>
+
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/escapamento.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço em escapamento">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

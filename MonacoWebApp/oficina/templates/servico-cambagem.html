@@ -1,0 +1,24 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Cambagem e caster</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">Cada veículo possui uma angulação ideal especificado pelo fabricante e o objetivo é ajudar a estabilidade do automóvel ao realizar esforços laterais que ocorrem no momento de uma curva, para compensar os movimentos de flexibilidade da suspensão, evitar vibrações de média intensidade das rodas para o volante. A alteração deste ângulo é muito difícil, mas pode acontecer no caso de pancada forte na lateral ou caso o carro passe por um buraco muito grande, mas o fato é que a maioria dos veículos não possui um sistema de regulagem de camber.</p>
+                    <p class="servico__conteudo">Existem três tipos camber:</p>
+                    <p class="servico__conteudo">• Cambagem negativa: pneus estão voltados para fora do carro;</p>
+                    <p class="servico__conteudo">• Cambagem positiva: os pneus estão voltados para dentro do carro;</p>
+                    <p class="servico__conteudo">• Cambagem nula: os pneus fazem um ângulo reto.</p>
+
+
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/cambagem.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço de cambagem">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

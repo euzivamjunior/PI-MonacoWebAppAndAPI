@@ -1,0 +1,21 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Motor</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">O motor é o coração do veículo e precisa de manutenção periódica uma vez por ano ou a cada 10.000 km, no mínimo. Os cuidados mais comuns são a troca de óleo e dos filtros (ar, óleo e combustível). Mas há outros itens que demandam manutenção preventiva, como correia dentada, cabos e velas de ignição e fluido de arrefecimento.</p>
+                    <p class="servico__conteudo">A dúvida que pode surgir é: e quando a manutenção está em dia e o motor começa a falhar ou apresentar consumo elevado, o que pode ser e o que fazer? O primeiro item a ser verificado é o combustível, pois a qualidade é fundamental para o bom funcionamento do motor. Combustível ruim contamina o óleo lubrificante, as velas de ignição e os bicos injetores. Para evitar problemas, o recomendável é abastecer sempre no mesmo posto, em horário comercial e pedir nota fiscal.</p>
+                    <p class="servico__conteudo">Pode ocorrer também de um ou mais componentes estarem com a especificação diferente da correta ou com defeito. Neste caso, é preciso revisar todos os sistemas até encontrar o defeito.</p>
+
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/motor.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço realizado em motor e embreagem">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

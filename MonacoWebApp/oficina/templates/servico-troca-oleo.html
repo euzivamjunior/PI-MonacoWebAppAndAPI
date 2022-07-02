@@ -1,0 +1,21 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Troca de óleo</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">É importante verificar o nível do óleo com regularidade e utilizar o lubrificante indicado pelo fabricante de seu carro ou similar. São três tipos de óleos: mineral, sintético ou semissintético.</p>
+                    <p class="servico__conteudo">Ainda que você tenha rodado pouco com o carro, o óleo deve ser trocado por conter em sua composição aditivos que perdem a validade, logo, a eficácia. Níveis muito baixos de óleo irão prejudicar a limpeza e refrigeração do motor, impactando negativamente em seu desempenho.</p>
+                    <p class="servico__conteudo">É importante efetuar a troca de óleo com o auxílio de um profissional de confiança. Ele saberá aferir a necessidade de completar ou trocar completamente. Fatores como a viscosidade impactam nessa decisão.</p>
+
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/trocaoleo.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço de troca de óleo">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Pneu</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">Assim como em um processo fabril, o veículo deve ser tratado como um equipamento que deve oferecer a máxima performance, com o menor custo de manutenção e com a máxima longevidade dos componentes, dentre eles, os pneus.
+                    </p>
+                    <p class="servico__conteudo">A manutenção preventiva e preditiva é a melhor forma de tornar a vida do pneu longeva. Dentre os itens desta manutenção, as condições da geometria de suspensão e direção talvez sejam o principal fator a ser observado, porque evita desgaste prematuro e irregular dos pneus.</p>
+                    <p class="servico__conteudo">Estas condições podem ser verificadas regularmente em um mecânico de confiança, ou ainda, podem ser controladas pela maioria das pessoas por meio de uma observação frequente dos pneus sempre que, por exemplo, o usuário fizer rodízios ou realizar trocas de óleo do motor ou dos próprios pneus.</p>
+                    <p class="servico__conteudo">Além da geometria, destacado mais acima, deve-se dedicar especial atenção à pressão de inflação de ar e ao rodízio dos pneus.</p>
+
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/Pneu.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço realizado em pneus">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

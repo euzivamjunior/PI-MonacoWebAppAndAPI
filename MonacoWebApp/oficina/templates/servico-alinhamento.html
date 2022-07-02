@@ -1,0 +1,26 @@
+{% extends 'base_services.html' %}
+{% load static %}
+{% block content %}
+
+      <section>
+        <div class="container servico">
+            <h3 class="servico__titulo">Alinhamento</h3>
+                <div class="container servico_texto">
+                    <p class="servico__conteudo">Por que fazer alinhamento é importante?
+                      Na maioria dos veículos, o alinhamento previne:
+                    </p>
+                    <p class="servico__conteudo">• O desgaste irregular dos pneus, aumentando a sua vida útil;</p>
+                    <p class="servico__conteudo">• O aumento do atrito do pneu no solo, contribuindo para a economia de combustível do veículo;</p>
+                    <p class="servico__conteudo">• O deslocamento do veículo, melhorando a dirigibilidade e a segurança.</p>
+                    <p class="servico__conteudo">• Amortecedores e molas</p>
+                    <p class="servico__conteudo">O sistema de suspensão é composto por amortecedores e molas, sendo responsável pela estabilidade do veículo e por aumentar o atrito entre os pneus e o solo. É esse sistema que garante a segurança e conforto dos ocupantes do carro quando o motorista precisa trafegar em pistas esburacadas e estradas de terra.</p>
+                    <p class="servico__conteudo">O exame desses componentes devem ser feito a cada 10 mil kms ou a qualquer momento mediante dúvida.</p>
+                </div>
+                <div class="container servico_margin_conteudo">
+                    <img class="servico__imagem " src="{% static 'imagens/imagens-Compactadas/Alinhamento.jpg' %}" width="527px" height="448px" alt="Imagem desmostrativa do serviço de alinhamento">
+                </div>
+
+        </div>
+      </section>
+
+{% endblock %}

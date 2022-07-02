@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" href="{% static './imagens/imagens-Compactadas/icone.png' %}">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Estilo customizado -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/estilo.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/menu-logo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/menu-botao.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/menu-item.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/menu-link.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/menu.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index/cabecalho/logo.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/agendamento/agendamento-link.css' %}">
+  <link rel="stylesheet" href="{% static 'css/agendamento/agendamento.css' %}">
+  <link rel="stylesheet" href="{% static 'css/agendamento/agendamento-cabecalho.css' %}">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <title>Mônaco - Oficina</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-ligh fixed-top menu">
+      <div class="container">
+        <a href="{% url 'index' %}" class="navbar-brand">
+          <img src="{% static 'imagens/logo.png' %}" class="menu__logo" alt="logo oficina">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" alt="Botão abrir menu navegação">
+          <i class="fas fa-bars "></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal" alt="Barra de navegação" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item menu__item">
+              <a href="{% url 'index' %}" class="nav-link " alt="Seção tela principal">Home</a>
+            </li>
+
+            <li class="nav-item menu__item">
+              <a href="{% url 'index' %}#sobreNos" class="nav-link" alt="Seção sobre informações da oficina">Sobre nós</a>
+            </li>
+
+            <li class="nav-item menu__item">
+              <a href="{% url 'index' %}#servicoOfertado" class="nav-link" alt="Seção tela principal">Produtos e serviços</a>
+            </li>
+
+            <li class="nav-item menu__item">
+              <a href="{% url 'index' %}#contato" class="nav-link" alt="Seção tela contato oficina">Contato</a>
+            </li>
+
+            <li class="nav-item menu__item">
+              <a href="{% url 'formulario' %}" class="btn btn-dark w-200 h-60 menu__botao" alt="Botão agendar serviço">Agende
+                um serviço</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button style="margin-top: 40px; font-size: 24px; font-weight: bold; background-color: black;" onclick="ApiCardData(document.getElementById('fabricante').value)" class="btn btn-outline-secondary"
+          type="button">Filtrar</button>
+      </div>
+      <input style="margin-top: 40px; height: 56px; font-size: 24px; font-weight: bold;" id="fabricante" type="text" class="form-control" placeholder="Digite um modelo ex: elantra" aria-label=""
+        aria-describedby="basic-addon1">
+    </div>
+
+    <table id="tabela" style="width: 100%; 
+                              background: black; 
+                              color: white; 
+                              text-align: center; 
+                              justify-content: space-between; 
+                              font-size: 24px; 
+                              font-weight: bold;">
+      <tr style="align-items: center; background-color: red;">
+        <td style="font-size: 32px;">Fabricante</td>
+        <td style="font-size: 32px;">Modelo</td>
+        <td style="font-size: 32px;">Cilindros</td>
+        <td style="font-size: 32px;">Ano Modelo</td>
+        <td style="font-size: 32px;">Transmissão</td>
+        <td style="font-size: 32px;">Acionamento</td>
+        <td style="font-size: 32px;">Combustivel</td>
+      </tr>
+    </table>
+  </section>
+
+
+
+
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="{% static 'js/app.js' %}"></script>
+
+  <script src="{% static 'api/CarData.js' %}"></script>
+
+</body>
+
+</html>
